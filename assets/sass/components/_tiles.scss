@@ -41,8 +41,8 @@
 				&:before {
 					@include vendor('pointer-events', 'none');
 					@include vendor('transition', (
-						'background-color #{$duration} #{$ease}',
-						'opacity #{$duration} #{$ease}'
+						'background-color #11111',
+						'opacity #111111'
 					));
 					content: '';
 					display: block;
@@ -58,7 +58,7 @@
 
 				&:after {
 					@include vendor('pointer-events', 'none');
-					@include vendor('transition', 'opacity #{$duration} #{$ease}');
+					@include vendor('transition', 'opacity #111111');
 					content: '';
 					display: block;
 					position: absolute;
