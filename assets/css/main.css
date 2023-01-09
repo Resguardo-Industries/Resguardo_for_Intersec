@@ -211,9 +211,11 @@ body,
 input,
 select,
 textarea {
-	color: #585858;
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 16pt;
+	/* color: #585858; */
+	color: #000000;
+	/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: 50px;
 	font-weight: 300;
 	line-height: 1.75;
 }
@@ -3311,53 +3313,15 @@ body.is-menu-visible #menu .close {
 
 }
 
+/* Auto Scroll View2 Header */
 
-/* Auto Scroll View */
-
-.tech-slideshow {
-	height: 200px;
-	max-width: 800px;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-	transform: translate3d(0, 0, 0);
-}
-
-.tech-slideshow>div {
-	height: 200px;
-	width: 2526px;
-	/*background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);*/
-	background: none;
-	position: absolute;
-	top: 0;
-	left: 0;
+.scrollheader {
 	height: 100%;
-	transform: translate3d(0, 0, 0);
-}
-
-/* Black & white scroll*/
-.tech-slideshow .mover-1 {
-	/*animation: none;*/
-	animation: moveSlideshow 12s linear infinite;
-}
-
-.tech-slideshow .mover-2 {
-	animation: none;
-	/*	opacity: 0;
-	transition: opacity 0.5s ease-out;
-	background-position: 0 -200px;
-	animation: moveSlideshow 15s linear infinite; */
-}
-
-.tech-slideshow:hover .mover-2 {
-	/*opacity: 1;*/
-	opacity: 0;
-}
-
-@keyframes moveSlideshow {
-	100% {
-		transform: translateX(-66.6666%);
-	}
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* <!-- Auto Scroll View2 --> */
@@ -3367,7 +3331,6 @@ body.is-menu-visible #menu .close {
 	padding: 0;
 }
 
-/* <!-- src: http://subtlepatterns.com/?p=1045 --> */
 
 body {
 	background: url('dark_geometric.png');
@@ -3380,35 +3343,29 @@ body {
 	background: white;
 }
 
-/*header*/
-/* header {
-	width: 800px;
-	margin: 40px auto;
-   } */
+/* photobanner containder */
 
-/* header h1 {
-	text-align: center;
-	font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
-	
-   } */
-
-/* header p {
-	font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
-	text-align: justify;
-   } */
+.photobannercontainer {
+	/* width: 1000px; */
+	/* margin: 50px auto; */
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+	background: white;
+}
 
 /*photobanner*/
 
 .photobanner {
 	/* height: 233px;
 	width: 350px; */
-
 	/* height: 280px;
 	width: 3550px; */
 
 	height: 400px;
-	width: 5550px;
+	width: 75%;
 	margin-bottom: 80px;
+
 }
 
 /*keyframe animations*/
@@ -3530,14 +3487,11 @@ body {
 }
 
 img {
+	/* height: 25em; */
 	width: auto;
 	height: 100%;
-	/* height: 25em; */
 	object-fit: contain;
 }
-
-
-
 
 
 /* Footer */
